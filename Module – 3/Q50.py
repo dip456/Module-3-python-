@@ -1,14 +1,6 @@
 """ Write a Python function to check whether a number is perfect or not. """
 def is_perfect(number):
-    """
-    Check if a number is perfect or not.
-
-    Parameters:
-        number (int): The number to check.
-
-    Returns:
-        bool: True if the number is perfect, False otherwise.
-    """
+   
     if number <= 0:
         return False
 
