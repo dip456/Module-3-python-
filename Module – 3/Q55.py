@@ -7,5 +7,5 @@ Using random.random() to generate a random floating-point number between 0 and 1
 """
 import random
 
-random_number = random.random()
+random_number = random.randint(11,99)
 print(random_number)
