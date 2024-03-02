@@ -1,11 +1,13 @@
 """ Write a Python program to print all unique values in a dictionary. """
 
-L = [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII": "S005"}, {"V": "S009"}, {"VIII": "S007"}]
+def unique_values(dict):
+    unique_values = set()
+    for value in dict.values():
+        unique_values.add(value)
+    return unique_values
 
-print("Original List: ", L)
+my_dict = {'a': 100, 'b': 200, 'c': 100, 'd': 300, 'e': 200}
 
+unique_vals = unique_values(my_dict)
 
-u_value = set(val for dic in L for val in dic.values())
-
-# Print the unique values stored in the 'u_value' set.
-print("Unique Values: ", u_value) 
+print("Unique values in the dictionary:", unique_vals)
