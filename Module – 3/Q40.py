@@ -1,9 +1,9 @@
 """ Write a Python program to map two lists into a dictionary """
 keys = ['python', 'java', 'php']
 
-values = [1, 2, 3]
+value = [1, 2, 3]
 
 
-color_dictionary = dict(zip(keys, values))
+c_dictionary = dict(zip(keys, value))
 
-print(color_dictionary)
+print(c_dictionary)
