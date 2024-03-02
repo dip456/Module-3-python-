@@ -4,14 +4,14 @@ Sample data: {'1': ['a','b'], '2': ['c','d']}
 Expected Output: 
 ac ad bc bd """
 
-def combinations_from_dict(dictionary):
+def combinations__dict(dictionary):
     values = list(dictionary.values())
     
     combinations = []
 
-    for letter1 in values[0]:
-        for letter2 in values[1]:
-            combinations.append(letter1 + letter2)
+    for l1 in values[0]:
+        for l2 in values[1]:
+            combinations.append(l1 + l2)
 
     return combinations
 
