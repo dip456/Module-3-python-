@@ -4,21 +4,19 @@ Sample data: {'1': ['a','b'], '2': ['c','d']}
 Expected Output: 
 ac ad bc bd """
 
-from itertools import product
+def combinations_from_dict(dictionary):
+    values = list(dictionary.values())
+    
+    combinations = []
 
-def generate_combinations(dictionary):
-    keys = list(dictionary.keys())
-    values = [dictionary[key] for key in keys]
-    combinations = product(*values)
+    for letter1 in values[0]:
+        for letter2 in values[1]:
+            combinations.append(letter1 + letter2)
+
     return combinations
 
-def display_combinations(combinations):
-    for combination in combinations:
-        print(''.join(combination), end=' ')
+sample_data = {'1': ['a', 'b'], '2': ['c', 'd']}
 
-# Sample data
-data = {'1': ['a', 'b'], '2': ['c', 'd']}
-
-# Generate and display combinations
-combinations = generate_combinations(data)
-display_combinations(combinations)
+combinations = combinations_from_dict(sample_data)
+print("Expected Output:")
+print(" ".join(combinations))
