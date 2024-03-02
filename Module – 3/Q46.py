@@ -12,10 +12,8 @@ def combine_values(list_of_dicts):
         combined_values[d['item']] += d['amount']
     return combined_values
 
-# Sample data
 data = [{'item': 'item1', 'amount': 400}, {'item': 'item2', 'amount': 300}, {'item': 'item1', 'amount': 750}]
 
-# Combine values and print the result
 result = combine_values(data)
 print("Combined values:")
 print(result)
